@@ -1,12 +1,19 @@
-<div class='form-container'>
-  <h1>Nova Transferência</h1>
-  <div>
-    <label for="value">Valor</label>
-    <input type="number" id="value" name="value" formControlName='value' />
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-container">
+    <h1>Nova Transferência</h1>
+    <div>
+      <label for="value">Valor</label>
+      <input type="number" id="value" name="value" formControlName="value" />
+    </div>
+    <div>
+      <label for="account">Conta</label>
+      <input
+        type="number"
+        id="account"
+        name="account"
+        formControlName="account"
+      />
+    </div>
+    <button type='submit'>Confirmar</button>
   </div>
-  <div>
-    <label for="account">Conta</label>
-    <input type="number" id="account" name="account" formControlName='account' />
-  </div>
-      <button (click)='teste()'>Confirmar</button>
-</div>
+</form>
