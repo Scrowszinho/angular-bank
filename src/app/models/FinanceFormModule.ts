@@ -3,5 +3,5 @@ export interface IFinanceForm {
   account : number;
   value: number;
   date: Date | string;
-  type: string;
+  status: string;
 }

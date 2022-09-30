@@ -4,9 +4,13 @@
     <th>Account</th>
     <th>Value</th>
     <th>Date</th>
+    <th>Status</th>
   </tr>
-  <tr>
-
+  <tr *ngFor="let item of data;index as i">
+    <th>{{ i }}</th>
+    <th>{{ item.account }}</th>
+    <th>{{ item.value }}</th>
+    <th>{{ item.date }}</th>
+    <th ngStyle="service.getStatusColor(item.status)">{{ item.status }}</th>
   </tr>
-
 </table>
