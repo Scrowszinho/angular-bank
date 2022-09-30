@@ -11,6 +11,6 @@
     <th>{{ item.account }}</th>
     <th>{{ item.value }}</th>
     <th>{{ item.date }}</th>
-    <th ngStyle="service.getStatusColor(item.status)">{{ item.status }}</th>
+    <th class='status-col' [ngStyle]="service.getStatusColor(item.status)">{{ item.status }}</th>
   </tr>
 </table>
