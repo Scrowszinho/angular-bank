@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FinanceFormComponent } from './finance-form/finance-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FinanceListComponent } from './finance-list/finance-list.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FinanceListComponent } from './finance-list/finance-list.component';
   ],
   imports: [
     ReactiveFormsModule,
+    MatTableModule,
     CommonModule
   ]
 })
