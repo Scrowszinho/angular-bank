@@ -1,4 +1,4 @@
-import { IFinanceForm } from './../models/FinanceFormModule';
+import { IFinanceForm } from '../models/finance-form.interface';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
