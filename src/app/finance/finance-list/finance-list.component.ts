@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinanceListComponent implements OnInit {
   data: any;
-
+  displayedColumns = [
+    'id',
+    'account',
+    'value',
+    'date',
+    'status'
+  ];
   constructor(private service : FinanceService) { }
 
   ngOnInit(): void {
