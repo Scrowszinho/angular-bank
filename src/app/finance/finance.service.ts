@@ -1,4 +1,4 @@
-import { IFinanceForm } from '../models/finance-form.interface';
+import { IFinanceCredit } from '../models/finance-credit.interface';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
@@ -12,12 +12,12 @@ export class FinanceService {
   constructor(private httpClient: HttpClient) { }
    apiUrl = environment.apiUrl + '/transfers';
 
-  searchTransfer() : Observable<IFinanceForm[]>{
-    return this.httpClient.get<IFinanceForm[]>(this.apiUrl);
+  searchTransfer() : Observable<IFinanceCredit[]>{
+    return this.httpClient.get<IFinanceCredit[]>(this.apiUrl);
   }
 
-  sendTransfer(data : IFinanceForm){
-    return this.httpClient.post<IFinanceForm>(this.apiUrl, data)
+  sendTransfer(data : IFinanceCredit){
+    return this.httpClient.post<IFinanceCredit>(this.apiUrl, data)
   }
 
   getStatusColor(status : FinanceStatus){
