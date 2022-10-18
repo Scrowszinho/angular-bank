@@ -4,11 +4,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 @NgModule({
 	imports: [
-		RouterModule.forRoot([
-			{path: 'finance', pathMatch: 'full', redirectTo: '/finance', children: [
+		RouterModule.forChild([
+			{path: 'finance', redirectTo: '/finance', children: [
                 {path: '', component: FinanceListComponent},
-                {path: '/add', component: FinanceFormComponent},
-                {path: '/edit:id', component: FinanceFormComponent},
+                {path: 'add', component: FinanceFormComponent},
+                {path: 'edit/:id', component: FinanceFormComponent},
             ]},
             
 		])
