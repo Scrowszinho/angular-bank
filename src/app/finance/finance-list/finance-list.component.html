@@ -1,30 +1,8 @@
-<!-- <table>
-  <tr>
-    <th>Id</th>
-    <th>Account</th>
-    <th>Value</th>
-    <th>Date</th>
-    <th>Status</th>
-  </tr>
-  <tr *ngFor="let item of data;index as i">
-    <th>{{ i }}</th>
-    <th>{{ item.account }}</th>
-    <th>{{ item.value }}</th>
-    <th>{{ item.date }}</th>
-    <th class='status-col' [ngStyle]="service.getStatusColor(item.status)">{{ item.status }}</th>
-  </tr>
-</table> -->
-
-<table mat-table [dataSource]="data" class="mat-elevation-z8">
+<table mat-table [dataSource]="data" class="mat-elevation-z8 table">
 
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> Id </th>
     <td mat-cell *matCellDef="let item"> {{item.id}} </td>
-
-  <!-- <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Quem recebeu </th>
-    <td mat-cell *matCellDef="let item"> {{item.name}} </td>
-  </ng-container> -->
 
   <ng-container matColumnDef="date">
     <th mat-header-cell *matHeaderCellDef> Data </th>

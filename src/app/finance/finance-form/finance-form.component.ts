@@ -35,8 +35,8 @@ export class FinanceFormComponent {
       name: '',
       description: ''
     }).subscribe(
-        sucess => this._snackBar.open('Transação cadastrada'),
-        error =>  this._snackBar.open('Opá! Alguma coisa deu errado'));
+        sucess => this._snackBar.open('Transação cadastrada', 'x'),
+        error =>  this._snackBar.open('Opá! Alguma coisa deu errado', 'x'));
     this.form.reset();
   }
   }

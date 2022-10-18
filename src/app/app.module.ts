@@ -1,3 +1,4 @@
+import { MaterialModule } from './material.module';
 import { CommonModule } from '@angular/common';
 import { FinanceModule } from './finance/finance.module';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { ComponentsModule } from './components/components.module';
+import { AppRoute } from './app.route';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     CommonModule,
     ComponentsModule,
+    MaterialModule,
     MatTableModule,
     HttpClientModule,
     MatSnackBarModule,
@@ -25,6 +28,7 @@ import { ComponentsModule } from './components/components.module';
     ReactiveFormsModule,
     FinanceModule,
     BrowserAnimationsModule,
+    AppRoute,
   ],
   providers: [],
   bootstrap: [AppComponent]
