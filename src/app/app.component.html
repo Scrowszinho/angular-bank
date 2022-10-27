@@ -1,6 +1,8 @@
 <mat-toolbar>
     <span>My Application</span>
-    <button (click)="nav(1)">finance add</button>
-    <button (click)="nav(2)">finance list</button>
+    <button routerLink="finance/add">finance add</button>
+    <button routerLink="finance/list">finance list</button>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div class="app-body">
+    <router-outlet></router-outlet>
+</div>

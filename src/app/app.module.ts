@@ -19,6 +19,7 @@ import { AppRoute } from './app.route';
   imports: [
     BrowserModule,
     CommonModule,
+    AppRoute,
     ComponentsModule,
     MaterialModule,
     MatTableModule,
@@ -28,7 +29,6 @@ import { AppRoute } from './app.route';
     ReactiveFormsModule,
     FinanceModule,
     BrowserAnimationsModule,
-    AppRoute,
   ],
   providers: [],
   bootstrap: [AppComponent]

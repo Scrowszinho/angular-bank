@@ -1,9 +1,10 @@
 import { FinanceService } from './../finance.service';
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { v4 as uuidv4 } from 'uuid';
 import { FinanceStatus } from 'src/app/enums/finance-status.enum';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'finance-form',
@@ -11,16 +12,19 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./finance-form.component.scss'],
 })
 export class FinanceFormComponent {
+  public form : FormGroup;
+
   constructor(
     private service: FinanceService,
+    private router : Router,
     private _snackBar: MatSnackBar,
     private formBuilder: FormBuilder
-  ) {}
-
-  form = this.formBuilder.group({
-    value: null,
-    account: null,
-  });
+  ) {
+    this.form = this.formBuilder.group({
+      'value': [null, [Validators.required]],
+      'account': [null, [Validators.required]],
+    });
+  }
 
   onSubmit(): void {
     let rawValue = this.form.getRawValue();
@@ -35,7 +39,10 @@ export class FinanceFormComponent {
       name: '',
       description: ''
     }).subscribe(
-        sucess => this._snackBar.open('Transação cadastrada', 'x'),
+        sucess => {
+          this.router.navigateByUrl('finance/list')
+          this._snackBar.open('Transação cadastrada', 'x');
+        },
         error =>  this._snackBar.open('Opá! Alguma coisa deu errado', 'x'));
     this.form.reset();
   }

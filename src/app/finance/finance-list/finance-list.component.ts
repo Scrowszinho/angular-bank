@@ -1,3 +1,4 @@
+import { ITableColumn } from './../../models/table.interface';
 import { FinanceService } from './../finance.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,25 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinanceListComponent implements OnInit {
   data: any;
-  displayedColumns = [
-    'id',
-    'account',
-    'value',
-    'date',
-    'status'
-  ];
+  displayedColumns: ITableColumn[] = [];
+  
   constructor(private service : FinanceService) { }
 
   ngOnInit(): void {
     this.getTransfers();
-    console.log(this.data);
-
+    this.listColumns();
   }
 
   getTransfers(){
     this.service.searchTransfer().subscribe((transfers) =>{
       this.data = transfers;
+      console.log(transfers);
     })
+  }
+
+  listColumns() : void {
+    this.displayedColumns = [
+      {
+        name: 'ID',
+        dataKey: 'id',
+      },
+    ];
   }
 
 }
