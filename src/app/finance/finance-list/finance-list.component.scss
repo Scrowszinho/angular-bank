@@ -5,4 +5,18 @@
 
 .table{
   width: 100%;
+  padding: 0px 20px;
+  border: 1px solid #369c38;
+  border-radius: 20px;
+  .table-button{
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  th, td{
+    text-align: center;
+  }
+  mat-chip-list{
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -1,39 +1,18 @@
 {
   "transfers": [
     {
-      "id": "c0873e3d-dcc1-439c-876e-b3f37ff972da",
-      "account": 1,
-      "value": 1,
-      "date": "20/09/2022",
-      "status": "ON_PROCESS"
+      "account": 11,
+      "value": 123,
+      "date": "01/11/2022",
+      "status": "CANCELED",
+      "id": 1
     },
     {
-      "id": "318d1943-c571-4081-93de-301b9da8b1f6",
-      "account": 123,
-      "value": 100,
-      "date": "23/09/2022",
-      "status": "ON_PROCESS"
-    },
-    {
-      "id": "428935cd-1ca1-4841-a892-b76f8f594871",
-      "account": 0,
-      "value": 0,
-      "date": "23/09/2022",
-      "status": "ON_PROCESS"
-    },
-    {
-      "id": "4162cc99-496d-40cd-800b-673f3b10db09",
-      "account": 1,
-      "value": 1,
-      "date": "23/09/2022",
-      "status": "ON_PROCESS"
-    },
-    {
-      "id": "89f9edf2-2dee-41aa-875b-8805b01be0af",
-      "account": 1,
-      "value": 1,
-      "date": "23/09/2022",
-      "status": "ON_PROCESS"
+      "account": 1234,
+      "value": 150,
+      "date": "02/11/2022",
+      "status": "CANCELED",
+      "id": 2
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { FinanceRoute } from './finance.route';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FinanceFormComponent } from './finance-form/finance-form.component';
@@ -17,6 +18,7 @@ import { MaterialModule } from '../material.module';
   imports: [
     ReactiveFormsModule,
     MaterialModule,
+    FinanceRoute,
     CommonModule
   ]
 })

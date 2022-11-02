@@ -20,6 +20,11 @@ export class FinanceService {
     return this.httpClient.post<IFinanceCredit>(this.apiUrl, data)
   }
 
+  syncStatus(data){
+	let url = `${this.apiUrl}/${data.id}`;
+	return this.httpClient.put<IFinanceCredit>(url, data);
+  }
+
   getStatusColor(status : FinanceStatus){
 		let color, bkColor;
 		 if (status == FinanceStatus.ON_PROCESS) {

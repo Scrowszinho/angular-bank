@@ -1,0 +1,24 @@
+.app-body{
+    padding: 20px 10px 0px 10px;
+}
+
+.byte-topbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #369c38;
+    color: #FFF;
+    span{
+        flex-basis: 60%;
+    }
+    div{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: end;
+    }
+    .menu-icon{
+        font-size: 24px;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+}
