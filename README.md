@@ -1,27 +1,38 @@
-# Bytebank
+# <p align="center"> 📑 Bytebank </p>
+<br />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+# 🐱‍👤 Sobre
 
-## Development server
+Um aplicativo simples criado em Angular para registrar algumas transações, utilizando conceitos 
+básicos de requisição http e tratativas de erros.<br />
+# 🔧 Ferramentas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* <a href="https://angular.io/">Angular</a>
 
-## Code scaffolding
+* <a href="https://material.angular.io/">Material Angular</a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* <a href="https://sass-lang.com/">Sass</a><br />
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# 🎱 Atributos 
 
-## Running unit tests
+* Recebe duas informações digitadas pelo usuário.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Trata os dados. 
 
-## Running end-to-end tests
+* Envia para o backend.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Usuário valida um registro para alterar seu status.
+<br/>
 
-## Further help
+# 🏴‍☠️Como utilizar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  ```sh
+$ git clone https://github.com/Scrowszinho/angular-bank
+$ git pull
+  ```
+
+```sh
+$ npm install
+$ ng serve
+```
