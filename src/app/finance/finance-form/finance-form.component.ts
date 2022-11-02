@@ -28,16 +28,12 @@ export class FinanceFormComponent {
 
   onSubmit(): void {
     let rawValue = this.form.getRawValue();
-    // TODO - CREATE CAMPS IN FORM
     if(rawValue.account && rawValue.value){
     this.service.sendTransfer({
-      id: uuidv4(),
       account: rawValue.account || 0,
       value: rawValue.value || 0,
       date: new Date().toLocaleDateString(),
       status: FinanceStatus.ON_PROCESS,
-      name: '',
-      description: ''
     }).subscribe(
         sucess => {
           this.router.navigateByUrl('finance/list')

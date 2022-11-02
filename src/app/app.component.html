@@ -1,7 +1,9 @@
-<mat-toolbar>
-    <span>My Application</span>
-    <button routerLink="finance/add">finance add</button>
-    <button routerLink="finance/list">finance list</button>
+<mat-toolbar class="byte-topbar">
+    <span>ByteBank</span>
+    <div>
+        <mat-icon class="menu-icon" routerLink="home">home</mat-icon>
+        <mat-icon class="menu-icon" routerLink="finance/add">add</mat-icon>        
+    </div>
 </mat-toolbar>
 <div class="app-body">
     <router-outlet></router-outlet>

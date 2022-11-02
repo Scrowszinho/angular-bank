@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 	imports: [
 		RouterModule.forChild([
 			{path: 'finance', children: [
-                {path: 'list',  component: FinanceListComponent},
+                {path: 'list', component: FinanceListComponent},
                 {path: 'add', component: FinanceFormComponent},
                 {path: 'edit/:id', component: FinanceFormComponent},
             ]},

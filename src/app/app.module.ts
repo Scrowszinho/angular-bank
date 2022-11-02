@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
-import { ComponentsModule } from './components/components.module';
 import { AppRoute } from './app.route';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { AppRoute } from './app.route';
     BrowserModule,
     CommonModule,
     AppRoute,
-    ComponentsModule,
     MaterialModule,
     MatTableModule,
     HttpClientModule,
